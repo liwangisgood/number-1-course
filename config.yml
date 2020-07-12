@@ -1,0 +1,16 @@
+title: number 1
+description: learn forever
+template:
+  repo: number-1-template
+  name: number-1
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
